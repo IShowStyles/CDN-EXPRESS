@@ -17,7 +17,6 @@ app.use((req, res, next) => {
 });
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 
-// Start the server
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
     console.log(`CDN server is running on port ${port}`);
